@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Reflection.Emit;
-using HarmonyLib;
-using Vintagestory.API.Client;
+﻿using HarmonyLib;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Server;
@@ -19,7 +14,6 @@ public class OnHurtPatch
         {
             var world = __instance.World;
             var heal = damageSource.Type == EnumDamageType.Heal;
-            
             
             var msg = Lang.Get(heal ? "damagelog-heal-byplayer" : "damagelog-damage-byplayer", damage, string.Empty);
 

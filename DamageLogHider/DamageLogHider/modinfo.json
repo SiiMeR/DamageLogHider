@@ -4,12 +4,12 @@
     "name": "DamageLogHider",
     "RequiredOnServer": true,
     "RequiredOnClient": false,
-    "side": "Client",
+    "side": "Server",
     "authors": [
         "SiiMeR"
     ],
     "description": "Hides player names from the damage log",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "game": "1.19.8"
     }
