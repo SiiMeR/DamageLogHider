@@ -9,11 +9,8 @@ namespace DamageLogHider;
 
 public class DamageLogHiderModSystem : ModSystem
 {
-    public static ICoreServerAPI serverApi;
-
     public override void StartServerSide(ICoreServerAPI api)
     {
-        serverApi = api;
         var harmony = new Harmony(Mod.Info.ModID);
 
         var original = AccessTools.Method(typeof(EntityPlayer), nameof(EntityPlayer.OnHurt));
