@@ -1,0 +1,16 @@
+{
+    "type": "code",
+    "modid": "damageloghider",
+    "name": "DamageLogHider",
+    "RequiredOnServer": true,
+    "RequiredOnClient": false,
+    "side": "Client",
+    "authors": [
+        "SiiMeR"
+    ],
+    "description": "Hides player names from the damage log",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.19.8"
+    }
+}
